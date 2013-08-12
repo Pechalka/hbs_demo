@@ -1,4 +1,4 @@
-define(['backbone', 'hbs!test/templates/condition'], function(Backbone, template) {
+define(['backbone', 'hbs!apps/test/templates/condition'], function(Backbone, template) {
 	return Backbone.View.extend({
 		events : {
 			"click .btn-save" : "save"

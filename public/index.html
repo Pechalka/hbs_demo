@@ -1,24 +1,26 @@
 <html>
     <head>
         <title>Test Application Page</title>
+<!--         
+        <link rel="stylesheet" type="text/css" href="/css/main.css">
+ -->
+
+<link rel="stylesheet" type="text/css" href="/build/css/main.css">
+
+
     </head>
     <body>
         <h1>Test Application</h1>
         <div class="container" id="demo-app-container">
             <p>Welcome to WiserTogether test Backbone application. For run app click <a href='#/slug/'>here</a></p>
         </div>
-<!-- 
-        <script src="lib/jquery.js"></script>
-        <script src="lib/underscore.js"></script>
-        <script src="lib/backbone.js"></script>
-        <script src="lib/handlebars.js"></script>
-        <script src="apps/test/application.js"></script>
-        <script src="apps/test/models.js"></script>
-        <script>
-            TestApp.init();
-        </script>
-         -->
 
-         <script type="text/javascript" src="/lib/require.js" data-main="/apps/main"></script>
+<!-- 
+         <script type="text/javascript" src="/lib/require.js" data-main="/main"></script>
+ -->
+
+
+        <script type="text/javascript" src="/build/main.js" data-main="/build/main"></script>
+
     </body>
 </html>

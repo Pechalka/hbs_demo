@@ -1,4 +1,4 @@
-define(['backbone', 'test/view', 'test/models'], function(Backbone, View, Model){
+define(['backbone', 'apps/test/view', 'apps/test/models'], function(Backbone, View, Model){
 	return Backbone.Router.extend({
 	 	routes: {
 	    	"/slug/": "slug"   
