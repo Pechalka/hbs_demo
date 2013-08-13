@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Test Application Page</title>
+        <% if @is_production : %>
+            <link rel="stylesheet" type="text/css" href="/build/css/main.css">
+        <% else : %>
+            <link rel="stylesheet" type="text/css" href="/css/main.css">
+        <% end %>
+    </head>
+    <body>
+        <h1>Test Application</h1>
+        <div class="container" id="demo-app-container">
+            <p>Welcome to WiserTogether test Backbone application. For run app click <a href='#/slug/'>here</a></p>
+        </div>
+
+        <% if @is_production : %>
+            <script type="text/javascript" src="/build/main.js" data-main="/build/main"></script>
+        <% else : %>
+            <script type="text/javascript" src="/lib/require.js" data-main="/main"></script>
+        <% end %>
+    </body>
+</html>
